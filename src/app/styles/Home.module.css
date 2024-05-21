@@ -1,0 +1,85 @@
+.container {
+    min-height: 100vh; /* För att säkerställa att containern täcker hela höjden av fönstret */
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrera vertikalt */
+    align-items: center; /* Centrera horisontellt */
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0 auto; /* Centrera horisontellt i fönstret */
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main h2 {
+    color: #333333;
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  .main p {
+    color: #666666;
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .ctaButton {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .ctaButton:hover {
+    background-color: #333333;
+  }
+  
+  .footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+  
+  .slide {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
