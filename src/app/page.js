@@ -1,24 +1,29 @@
-import Image from 'next/image'
-import styles from './styles/Home.module.css'
+import Image from 'next/image';
+import styles from './styles/Home.module.css';
+import Slider from './components/Slider';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <Image src="/./logo.png" alt="CodeForged Logo" width={200} height={200} />
+        <Image src="/logo.png" alt="CodeForged Logo" width={250} height={250} />
+        <nav className={styles.navbar}>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
       <main className={styles.main}>
-        <h2>Welcome to CodeForged</h2>
-        <p>Your partner in crafting high-quality software solutions.</p>
-       
-        <p>Here at CodeForged, we strive to be like the skilled blacksmiths of the digital realm. Just as the blacksmith shapes and forges iron with precision and skill, we meld our projects together with high-quality code and expertise. Our primary goal is to provide you, our client, with a sense of complete assurance when it comes to your software projects.</p>
-        <h2>What can you expect from us at CodeForged?</h2>
-        <p>Whether you need to develop new software from scratch, enhance an existing application, or tackle complex technical challenges, you can rely on CodeForged to deliver top-quality results.</p>
-        <p>Contact us today to discuss your projects and how we can help bring your visions to life.</p>
+      <h2>Welcome to CodeForged</h2>
+        <Slider />
+        
+        <h2>Continuous Support</h2>
+        <p>Our commitment to you doesn't end when the project is complete. We offer continuous support and maintenance to ensure that your software continues to perform at its best.</p>
+
       </main>
       <footer className={styles.footer}>
         <p>© 2024 CodeForged. All rights reserved.</p>
       </footer>
     </div>
-  )
+  );
 }
